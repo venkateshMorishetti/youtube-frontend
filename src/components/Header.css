@@ -1,0 +1,17 @@
+.content-center{
+    display: flex;
+    justify-content: center;
+}
+
+.content-end{
+    display: flex;
+    justify-content: end;
+}
+
+.padding-left-20{
+    padding-left: 20px;
+}
+
+.-margin-left-85{
+    margin-left: -85px;
+}

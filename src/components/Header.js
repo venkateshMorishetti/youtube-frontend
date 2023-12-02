@@ -2,11 +2,9 @@ import './Header.css';
 import { HAMBURGER_MENU_ICON, YOUTUBE_LOGO, USER_ICON } from '../utility/constants';
 import { useDispatch } from 'react-redux';
 import { updateToHamburgerMenu } from '../utility/appConfigSlice';
-import ButtonList from './ButtonList';
 const Header = () =>{
     const dispatch = useDispatch();
     const switchToHamBurgerMenu = () =>{
-        console.log("switching to hamburger menu");
         dispatch(updateToHamburgerMenu());
     }
     return (
@@ -15,7 +13,7 @@ const Header = () =>{
                 <img className="h-12 cursor-pointer"
                 src={HAMBURGER_MENU_ICON}  onClick={switchToHamBurgerMenu}
                 alt="sidebar icon" />
-                <img className="h-20 -my-4 padding-left-20 cursor-pointer" src={YOUTUBE_LOGO} alt="youtube logo" />
+               <img className="h-20 -my-4 padding-left-20 cursor-pointer" src={YOUTUBE_LOGO} alt="youtube logo"/>
             </div>
             <div className="col-span-10 content-center">
                 <input className="border-2 border-gray-300 rounded-l-full w-1/2 h-12 px-6 -margin-left-85" type="text" placeholder="Search" />

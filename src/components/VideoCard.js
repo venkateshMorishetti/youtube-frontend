@@ -34,7 +34,7 @@ const VideoCard = ({data}) => {
         return "Just now";
     }
     return (
-        <div className={isHamburgerMenu?"w-72 mx-8 my-2":"w-72 m-2"}>
+        <div className={isHamburgerMenu?"w-72 mx-8 my-2":"w-72 m-2 cursor-pointer"}>
             {
                 isHamburgerMenu?<img src={data.snippet.thumbnails.maxres.url} alt={data.snippet.title} className="rounded-lg"/>
                 :<img src={data.snippet.thumbnails.medium.url} alt={data.snippet.title} className="rounded-lg"/>

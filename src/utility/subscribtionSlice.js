@@ -8,6 +8,7 @@ const subscriptionsSlice = createSlice({
     },
     reducers:{
         addSubscription:(state,action) => {
+            state.channels = [];
             action.payload.map((item)=>{
                 state.channels.push(item);
             })

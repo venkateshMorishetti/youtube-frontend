@@ -280,3 +280,58 @@ export const OTHER_OPTIONS = [
     }
 
 ]
+
+
+export const HOME_PAGE_BUTTONS = [
+    {
+        'label': 'All',
+    },
+    {
+        'label': 'Live',
+    },
+    {
+        'label': 'Music',
+    },
+    {
+        'label': 'Gaming',
+    },
+    {
+        'label': 'News',
+    },
+    {
+        'label': 'Movies',
+    },
+    {
+        'label': 'Fashion',
+    },
+    {
+        'label': 'Learning',
+    },
+    {
+        'label': 'Spotlight',
+    },
+    {
+        'label': '360° Video',
+    },
+    {
+        'label': 'Browse channels',
+    },
+    {
+        'label': 'Tamil cinima',
+    },
+    {
+        'label': 'T-series',
+    },
+    {
+        'label': 'Cars',
+    },
+    {
+        'label': 'Series',
+    }
+]
+
+const YOUTUBE_API_KEY = "AIzaSyCVHjMEjJxNk9DyEOj5nuRAp3rVP_BV3qk";
+
+export const YOUTUBE_VIDEOS_API =
+'https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=Ks-_Mh1QhMc%2Cc0KYU2j0TM4%2CeIho2S0ZahI&maxResults=50&regionCode=IN&key='+YOUTUBE_API_KEY;
+

@@ -38,61 +38,61 @@ const Sidebar = () =>{
     }
     
     return(
-        <div className="sidebar  text-lg h-screen overflow-y-scroll  mx-10"> 
+        <div className="sidebar text-lg overflow-y-scroll h-screen w-72"> 
             <ul>
                 {MAIN_HEADERS.map((item, index) => (
-                    <li key={index} className="py-3 px-4 cursor-pointer menu-item flex">
+                    <li key={index} className="py-3 pl-12 pr-4 cursor-pointer menu-item flex">
 
-                        <img src={item.icon}  className="h-6 px-2"></img>
+                        <img src={item.icon}  className="h-6 pl-2 pr-6"></img>
                         {item.label}
                     </li>
                 ))}
             </ul>
-            <hr class="h-px bg-gray-200 border-0 dark:bg-gray-700"></hr>
-            <h1 className="py-2 header-size font-bold" >You</h1>
+            <hr className="h-px bg-gray-200 border-0 dark:bg-gray-700"></hr>
+            <h1 className="py-2 header-size font-bold pl-8" >You</h1>
             <ul>
                 {YOU_OPTIONS.map((item, index) => (
-                     <li key={index} className="py-3 px-4 cursor-pointer menu-item flex">
+                      <li key={index} className="py-3 pl-12 pr-4 cursor-pointer menu-item flex">
 
-                        <img src={item.icon}  className="h-6 px-2"></img>
-                        {item.label}
-                    </li>
+                      <img src={item.icon}  className="h-6 pl-2 pr-6"></img>
+                      {item.label}
+                  </li>
                 ))}
             </ul>
-            <hr class="h-px bg-gray-200 border-0 dark:bg-gray-700"></hr>
-            <h1 className="py-2 header-size font-bold" >Subscriptions</h1>
+            <hr className="h-px bg-gray-200 border-0 dark:bg-gray-700"></hr>
+            <h1 className="py-2 header-size font-bold pl-8" >Subscriptions</h1>
             <ul>
                 {subscriptionsFromStore.map((item, index) => (
-                     <li key={index} className="py-3 px-4 cursor-pointer menu-item flex">
+                    <li key={index} className="py-3 pl-12 pr-4 cursor-pointer menu-item flex">
 
-                     <img src={item.icon}  className="h-6 px-2"></img>
-                     {item.label}
-                 </li>
+                        <img src={item.icon}  className="h-6 pl-2 pr-6"></img>
+                        {item.label}
+                    </li>
                 ))}
                 
             </ul>
-            <div className="flex cursor-pointer" onClick={showFullSubscrbtionsList}>
+            <div className="flex cursor-pointer pl-8" onClick={showFullSubscrbtionsList}>
                 <div className="py-2 font-medium " >{isAllSubscriptionsShownToggle?"Show Less":"Show More"}</div>
                 <img className="h-4 pl-8 pt-1 mt-14" s src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMh-YOPqO0eUupeziUmTGtDuYQgiQeJ1jg31grmry-Qo7pUnTjQvtFRgdXUld0mUv1evw&usqp=CAU"></img>
             </div>
-            <hr class="h-px bg-gray-200 border-0 dark:bg-gray-700"></hr>
+            <hr className="h-px bg-gray-200 border-0 dark:bg-gray-700"></hr>
             <ul>
                 {MORE_FROM_YOUTUBE_OPTIONS.map((item, index) => (
-                    <li key={index} className="py-3 px-4 cursor-pointer menu-item flex">
+                    <li key={index} className="py-3 pl-12 pr-4 cursor-pointer menu-item flex">
 
-                        <img src={item.icon}  className="h-6 px-2"></img>
-                        {item.label}
-                   </li>
+                    <img src={item.icon}  className="h-6 pl-2 pr-6"></img>
+                    {item.label}
+                </li>
                 ))}
             </ul>
-            <hr class="h-px bg-gray-200 border-0 dark:bg-gray-700"></hr>
+            <hr className="h-px bg-gray-200 border-0 dark:bg-gray-700"></hr>
             <ul>
                 {OTHER_OPTIONS.map((item, index) => (
-                   <li key={index} className="py-3 px-4 cursor-pointer menu-item flex">
+                   <li key={index} className="py-3 pl-12 pr-4 cursor-pointer menu-item flex">
 
-                        <img src={item.icon}  className="h-6 px-2"></img>
-                        {item.label}
-                  </li>
+                   <img src={item.icon}  className="h-6 pl-2 pr-6"></img>
+                   {item.label}
+               </li>
                 ))}
             </ul>
         </div>

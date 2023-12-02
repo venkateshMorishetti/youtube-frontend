@@ -1,10 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit'
 import subscribtionSliceReducer from './subscribtionSlice';
 import appConfigSliceReducer from './appConfigSlice';
+import youtubeVideosSliceReducer from './youTubeVideosSlice';
+
 const store = configureStore({
     reducer:{
         subscriptions:subscribtionSliceReducer,
-        appconfig: appConfigSliceReducer
+        appconfig: appConfigSliceReducer,
+        youTubeVideos: youtubeVideosSliceReducer
     }
 })
 

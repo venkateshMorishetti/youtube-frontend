@@ -7,9 +7,12 @@ const Body = () =>{
     const isHamburgerMenuShown = useSelector((store)=> store.appconfig.displayHamburgerMenu)
     return (
         <div className="body flex">
-            {isHamburgerMenuShown? <HamburgerSideBarMenu />:<Sidebar />}
-            
+            <div className={!isHamburgerMenuShown?"w-1/6":""}>
+            {isHamburgerMenuShown?<HamburgerSideBarMenu />: <Sidebar />}
+            </div>
+            <div className={!isHamburgerMenuShown?"w-5/6":""}>
             <MainContainer />
+            </div>
         </div>
     )
 }

@@ -6,6 +6,7 @@ import appStore from './utility/appStore';
 
 function App() {
   return (
+    
     <Provider store={appStore}>
       <Header />
       <Body /> 

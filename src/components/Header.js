@@ -2,6 +2,7 @@ import './Header.css';
 import { HAMBURGER_MENU_ICON, YOUTUBE_LOGO, USER_ICON } from '../utility/constants';
 import { useDispatch } from 'react-redux';
 import { updateToHamburgerMenu } from '../utility/appConfigSlice';
+import ButtonList from './ButtonList';
 const Header = () =>{
     const dispatch = useDispatch();
     const switchToHamBurgerMenu = () =>{
@@ -9,7 +10,6 @@ const Header = () =>{
         dispatch(updateToHamburgerMenu());
     }
     return (
-
         <div className="grid grid-flow-col m-4 ">
             <div className="col-span-1 flex">
                 <img className="h-12 cursor-pointer"
@@ -24,6 +24,7 @@ const Header = () =>{
             <div className="col-span-1 content-end">
             <img className = "h-12 cursor-pointer" src={USER_ICON} alt="user info icon"/>
             </div>
+           
         </div>
     )
 }

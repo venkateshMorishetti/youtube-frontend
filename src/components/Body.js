@@ -11,7 +11,7 @@ const Body = () =>{
             <div className={!isHamburgerMenuShown?"w-1/6":""}>
             {isHamburgerMenuShown?<HamburgerSideBarMenu />: <Sidebar />}
             </div>
-            <div className={!isHamburgerMenuShown?"w-5/6":""}>
+            <div className={!isHamburgerMenuShown?"w-5/6":"w-screen"}>
             {/* <MainContainer /> */}
             <Outlet />
             </div>

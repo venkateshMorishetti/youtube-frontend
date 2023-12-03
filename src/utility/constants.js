@@ -332,6 +332,11 @@ export const HOME_PAGE_BUTTONS = [
 
 const YOUTUBE_API_KEY = "AIzaSyCVHjMEjJxNk9DyEOj5nuRAp3rVP_BV3qk";
 
-export const YOUTUBE_VIDEOS_API =
-'https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=Ks-_Mh1QhMc%2Cc0KYU2j0TM4%2CeIho2S0ZahI&maxResults=50&regionCode=IN&key='+YOUTUBE_API_KEY;
+export const YOUTUBE_VIDEOS_API ='https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=IN&maxResults=50&key='+YOUTUBE_API_KEY;
+
+
+
+export const YOUTUBE_VIDEO_DATA = 
+'https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&key='+YOUTUBE_API_KEY+'&id=';
+
 

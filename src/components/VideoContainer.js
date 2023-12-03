@@ -12,17 +12,17 @@ const VideoContainer = () => {
         fetch(YOUTUBE_VIDEOS_API)
         .then(response => response.json())
         .then((data) =>{ 
-            let videos = [];
-            if(data.items.length < 50){
-                let len  = data.items.length;
-                while(len < 100){
-                    for(let i = 0; i < data.items.length; i++){
-                        videos.push(data.items[i]);
-                    }
-                    len = videos.length;
-                }
-            }
-            dispatch(addVideos(videos))
+            // let videos = [];
+            // if(data.items.length < 50){
+            //     let len  = data.items.length;
+            //     while(len < 100){
+            //         for(let i = 0; i < data.items.length; i++){
+            //             videos.push(data.items[i]);
+            //         }
+            //         len = videos.length;
+            //     }
+            // }
+            dispatch(addVideos(data.items))
         })
     }
     useEffect(()=>{
@@ -31,7 +31,7 @@ const VideoContainer = () => {
     return (
         <div className="video-container flex flex-wrap mt-4">
             {homePageVideos.map((item, index)=>(
-                <Link to={"/watch?v="+item.id}><VideoCard data={item} key={index} /></Link>
+                <Link to={"/watch?v="+item.id}><VideoCard data={item} key={item.id} /></Link>
             ))}
         </div>
 

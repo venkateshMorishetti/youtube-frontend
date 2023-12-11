@@ -12,16 +12,6 @@ const VideoContainer = () => {
         fetch(YOUTUBE_VIDEOS_API)
         .then(response => response.json())
         .then((data) =>{ 
-            // let videos = [];
-            // if(data.items.length < 50){
-            //     let len  = data.items.length;
-            //     while(len < 100){
-            //         for(let i = 0; i < data.items.length; i++){
-            //             videos.push(data.items[i]);
-            //         }
-            //         len = videos.length;
-            //     }
-            // }
             dispatch(addVideos(data.items))
         })
     }
